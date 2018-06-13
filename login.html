@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" href="css/iconfont.css"/>
+<link rel="stylesheet" href="css/login.css"/>
+<link rel="stylesheet" href="css/login_public.css"/>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="header_cen">
+			<a href="index.html"><img src="img/ny-logo.png"/></a>
+			<div class="header_right">
+				<p>您好！欢迎光临万鱼网 ！</p>
+				<a href="https://www.wytop.com/n-help.html">帮助中心</a>
+			</div>
+		</div>	
+		<div class="login_bg"></div>	
+	</div>
+
+<!-- banner -->
+	<div class="banner">
+		<div class="banner_cen">
+			<div class="ban_left"><img src="img/login-pic.jpg"/></div>
+			<form method="post" action="1.regSave.php">
+				<div class="ban_right">
+					<h3>万鱼网用户登录</h3>
+					<a href="register.html">注册账号</a>
+					<div class="username">
+						<input type="text" placeholder="用户名/手机号码" id="txtUsername" name="username"/>
+						<i class="iconfont icon-yonghutouxiang"></i>
+						<span id="usernameMsg"></span>
+					</div>
+					<div class="password">
+						<input type="password" placeholder="密码" id="passwordId" name="userpass"/>
+						<i class="iconfont icon-mima"></i>
+						<span id="passwordMsg"></span>
+					</div>
+					<div class="checkBox">
+						<input type="checkbox" id="loginauto" checked/>
+						<label for="loginauto">自动登录</label>
+						<a href="https://www.wytop.com/findpwd.html">忘记密码？</a>
+					</div>
+					<div class="login_g">
+						<input type="submit" value="登 录"/>
+					</div>
+					<p class="partner">合作网站帐号登录：</p>
+					<div class="partner_net">
+						<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx21bf9837a4615a32&redirect_uri=http%3A%2F%2Fwww.wytop.com%2Fplugin.html%3Fmod%3Doauth%26c%3Dwx%26act%3Dcallback&response_type=code&scope=snsapi_login&state=e9ddhraww99g253n#wechat_redirect"></a>
+						<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101348235&redirect_uri=http%3A%2F%2Fwww.wytop.com%2Fplugin.html%3Fmod%3Doauth%40qq%40callback&state=e01f64fb09921e5d0f84c5fc7f950673&scope=get_user_info"></a>
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+
+<!-- CopyRight -->
+	<div class=" copyRight">
+		<a href="index.html">首页</a><span>|</span>
+		<a href="https://www.wytop.com/n-help.html">关于我们</a><span>|</span>
+		<a href="https://www.wytop.com/n-help.html">联系我们</a><span>|</span>
+		<a href="login.html">会员中心</a><span>|</span>
+		<a href="https://www.wytop.com/n-help.html">帮助中心</a>
+		<p>Copy@2017 云EC电商系统 www.yunec.cn All Rights Reserved 粤ICP备16042138号-1</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	function $(id){
+		return document.getElementById(id);
+	}
+	window.onload=function(){
+		$("txtUsername").onblur=function(){
+			let xhr=new XMLHttpRequest();
+			let str="username="+this.value;
+			xhr.open("get","1.usernameChecked.php?"+str,true);
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					show(xhr.responseText);
+				}
+			}
+			xhr.send();
+		}
+	}
+
+	let arr=["小花","小哥哥","小姐姐","小鹿","小兰","小黄","小小","小红"];
+	function show(str){
+		if(str=="0"){
+			$("usernameMsg").innerHTML="存在";
+			let htmlstr="";
+			for(let i=0;i<3;i++){
+				let index=parseInt(Math.random()*arr.length);
+				let valStr=arr[index]+$("txtUsername").value;
+				htmlstr+='<input name="usernameRadio" type="radio" value="'+valStr+'"/>'+valStr+'<br/>';
+			}
+			$("box").innerHTML=htmlstr;
+			$("box").onclick=function(event){
+					let evt=event||window.event;
+					if(evt.target.type=="radio"){
+						$("txtUsername").value=evt.target.value;
+						$("box").style.display="none";
+						$("txtUsername").focus();
+					}
+			}
+			$("box").style.display="block";
+		}else{
+			$("usernameMsg").innerHTML="不可用";
+			$("box").style.display="none";
+		}
+	}
+
+</script>

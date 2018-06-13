@@ -1,0 +1,19 @@
+{
+  "name": "xiangmu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangqiuting/xiangmu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangqiuting/xiangmu/issues"
+  },
+  "homepage": "https://github.com/zhangqiuting/xiangmu#readme"
+}

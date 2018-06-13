@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>1.usernameChecked</title>
+</head>
+<body>
+	<form method="post" action="1.regSave.php" >
+		用户名：<input id="txtUsername" name="username" type="text" /><span id="usernameMsg"></span><br/>
+		<div id="box" style="width: 250px;background-color: pink;display: none;">
+			
+		</div>
+		密   码：<input name="userpass" type="password" /><br/>
+		确认密码：<input type="password" /><br/>
+		邮&nbsp;&nbsp;箱：<input name="useremail" type="text" /><br/>
+		<input type="submit" value="注册" />
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	function $(id){
+		return document.getElementById(id);
+	}
+	window.onload=function(){
+		$("txtUsername").onblur=function(){
+			let xhr=new XMLHttpRequest();
+			let str="username="+this.value;
+			xhr.open("get","1.usernameChecked.php?"+str,true);
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState==4&&xhr.status==200){
+					show(xhr.responseText);
+				}
+			}
+			xhr.send();
+		}
+	}
+
+	let arr=["小花","小哥哥","小姐姐","小鹿","小兰","小黄","小小","小红"];
+	function show(str){
+		if(str=="0"){
+			$("usernameMsg").innerHTML="存在";
+			let htmlstr="";
+			for(let i=0;i<3;i++){
+				let index=parseInt(Math.random()*arr.length);
+				let valStr=arr[index]+$("txtUsername").value;
+				htmlstr+='<input name="usernameRadio" type="radio" value="'+valStr+'"/>'+valStr+'<br/>';
+			}
+			$("box").innerHTML=htmlstr;
+			$("box").onclick=function(event){
+					let evt=event||window.event;
+					if(evt.target.type=="radio"){
+						$("txtUsername").value=evt.target.value;
+						$("box").style.display="none";
+						$("txtUsername").focus();
+					}
+			}
+			$("box").style.display="block";
+		}else{
+			$("usernameMsg").innerHTML="不可用";
+			$("box").style.display="none";
+		}
+	}
+
+</script>

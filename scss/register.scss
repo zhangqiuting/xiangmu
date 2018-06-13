@@ -1,0 +1,301 @@
+@charset "utf-8";
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,h1,h2,h3,h4,h5,h6,hr,fieldset,input,img{
+	margin:0;
+	padding:0;
+	outline: none;
+	border: none;
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑",April;
+	background: #fdfdfd;
+}
+
+/*header*/
+.header{
+	width:100%;
+	height:80px;
+	/*border-bottom: 2px solid #000;*/
+}
+.header_cen{
+	width: 1306px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header_left img{
+	float: left;
+	margin-top: 20px;
+}
+.header_left h3{
+	float: left;
+	font-size: 18px;
+	font-weight: 100;
+	color: #a7a7a7;
+	line-height: 80px;
+}
+.header_left p{
+	float: left;
+	margin: -5px 6px 0 18px;
+}
+.header_right{
+	float: right;
+	margin-top: 53px;
+	font-size: 12px;
+}
+.header_right p{
+	float: left;
+	color: #000;
+}
+.header_right a{
+	float: left;
+	text-decoration: none;
+	color: #185bc9;
+	margin-left: 10px;
+}
+.header_right a:hover{
+	color: #de342f;
+}
+.login_bg{
+	width: 100%;
+	height: 4px;
+	background: url(../img/login_bg.png) repeat-x;
+}
+
+/*banner*/
+.banner{
+	width: 100%;
+}
+.ban_box{
+	width: 1000px;
+	border: 1px solid #e0e0e0;
+	margin: 55px auto;
+	padding: 44px 0 100px 75px;
+	position: relative;
+}
+.ban_box input{
+	display: block;
+	width: 400px;
+	height: 50px;
+	border: 1px solid #dedede;
+	text-indent: 60px;
+	font-size: 14px;
+	margin: 11px 10px 11px 0;
+}
+.username{
+	overflow: hidden;
+	position: relative;
+}
+.username input{
+	float: left;
+}
+.username img{
+	float: left;
+	margin-top: 32px;
+	margin-right: 6px;
+}
+.username p{
+	float: left;
+	margin-top: 32px;
+	font-size: 12px;
+	color: #888888;
+}
+.username .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 27px;
+	font-size: 18px;
+	color: #b5b5b5;
+}
+#userMsg{
+	position:absolute;
+	left: 412px;
+	top: 32px;
+	font-size: 12px;
+	color: #de342f;
+}
+.phonenumber{
+	overflow: hidden;
+	position: relative;
+}
+.phonenumber input{
+	float: left;
+}
+.phonenumber img{
+	float: left;
+	margin-top: 32px;
+	margin-right: 6px;
+}
+.phonenumber .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 29px;	
+	font-size: 18px;
+	color: #b5b5b5;
+}
+#phoneMsg{
+	position:absolute;
+	left: 412px;
+	top: 32px;
+	font-size: 12px;
+	color: #de342f;
+}
+.checkma{
+	overflow: hidden;
+	position: relative;
+}
+.checkma input{
+	float: left;
+	width: 278px;
+	background: #f1f1f1;
+	margin-right: 0;
+}
+.checkma .checkma_sub{
+	width: 122px;
+	height: 52px;
+	background: #dddddd;
+	text-indent: 0;
+	color: #bebebe;
+}
+.checkma .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 26px;	
+	font-size: 21px;
+	color: #b5b5b5;
+}
+.password{
+	overflow: hidden;
+	position: relative;	
+}
+.password .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 26px;	
+	font-size: 21px;
+	color: #b5b5b5;
+}
+.password input{
+	float: left;
+}
+.password img{
+	float: left;
+	margin-top: 32px;
+	margin-right: 6px;
+}
+.password p{
+	float: left;
+	margin-top: 32px;
+	font-size: 12px;
+	color: #888888;
+}
+#passwordMsg{
+	position:absolute;
+	left: 412px;
+	top: 32px;
+	font-size: 12px;
+	color: #de342f;
+}
+.checkpassword{
+	overflow: hidden;
+	position: relative;	
+}
+.checkpassword input{
+	float: left;
+}
+.checkpassword .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 26px;	
+	font-size: 21px;
+	color: #b5b5b5;
+}
+.checkpassword img{
+	float: left;
+	margin-top: 32px;
+	margin-right: 6px;
+}
+#checkpasswordMsg{
+	position:absolute;
+	left: 412px;
+	top: 32px;
+	font-size: 12px;
+	color: #de342f;
+}
+.checkbox{
+	overflow: hidden;
+	margin-top: 8px;
+}
+.checkbox input{	
+	width: 12px;
+	height: 12px;
+	color: #a6a6a6;
+	float: left;
+	margin-top: 8px;
+}
+.checkbox label{
+	font-size: 12px;
+	color: #333333;
+}
+.checkbox a{
+	font-size: 12px;
+	color: #185bc9;
+}
+.checkbox a:hover{
+	color: #de342f;
+	cursor: pointer;
+}
+.register input{
+	font-size: 18px;
+	color: #fff;
+	background: #de342f;
+	text-indent: 0;
+	text-align: center;
+}
+.register input:hover{
+	cursor: pointer;
+}
+.partner{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5px;
+	float: left;
+}
+.partner_net{
+	margin: 40px 0 90px 0;	
+	overflow: hidden;
+}
+.partner_net a:first-of-type{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../img/wechat_f.png) no-repeat;
+	float: left;
+}
+.partner_net a:last-of-type{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../img/qq_f.png) no-repeat;
+	float: left;
+	margin: 0 20px;
+}
+.partner_net a:first-of-type:hover{
+	background: url(../img/wechat_h.png) no-repeat;
+}
+.partner_net a:last-of-type:hover{
+	background: url(../img/qq_h.png) no-repeat;
+}
+.parts{
+	overflow: hidden;
+	position: absolute;
+	right: 0px;
+	top: 38px;
+}
+.parts span{
+	border-left: 1px solid #e8e8e8;
+	width: 1px;
+	height: 103px;
+	display: block;
+	margin-right: 14px;
+	float: left;
+}

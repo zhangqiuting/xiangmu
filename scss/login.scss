@@ -1,0 +1,179 @@
+@charset "utf-8";
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,h1,h2,h3,h4,h5,h6,hr,fieldset,input,img{
+	margin:0;
+	padding:0;
+	outline: none;
+	border: none;
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑",April;
+	background: #fdfdfd;
+}
+
+/*header*/
+.header{
+	width:100%;
+	height:80px;
+}
+.header_cen{
+	width: 1306px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header_cen img{
+	float: left;
+	margin-top: 20px;
+}
+.header_right{
+	float: right;
+	line-height: 80px;
+	font-size: 12px;
+}
+.header_right p{
+	float: left;
+	color: #000;
+}
+.header_right a{
+	float: left;
+	text-decoration: none;
+	color: #000;
+	margin-left: 10px;
+}
+.header_right a:hover{
+	color: #de342f;
+}
+.login_bg{
+	width: 100%;
+	height: 4px;
+	background: url(../img/login_bg.png) repeat-x;
+}
+
+/*banner*/
+.banner{
+	width: 100%;
+}
+.banner_cen{
+	width: 1306px;
+	margin: 0 auto;
+}
+.ban_left{
+	margin-top: 55px;
+	float: left;
+	margin-left: 130px;
+}
+.ban_right{
+	margin-top: 78px;
+	float: left;
+	margin-left: 78px;
+}
+.ban_right h3{
+	font-size: 20px;
+	font-weight: 100;
+	color: #4d4d4d;
+	margin-bottom: 30px;
+}
+.ban_right a{
+	font-size: 12px;
+	color: #185bc9;
+	text-decoration: none;
+}
+.ban_right input{
+	width: 330px;
+	height: 52px;
+	border: 1px solid #dedede;
+	margin: 10px 0;
+	text-indent: 60px;
+	font-size: 14px;
+}
+.ban_right span{
+	font-size: 12px;
+	color: #de342f;
+}
+.username{
+	position: relative;
+}
+.username .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 27px;
+	color: #b5b5b5;
+	font-size: 18px;
+}
+.password{
+	position: relative;
+}
+.password .iconfont{
+	position: absolute;
+	left: 20px;
+	top: 27px;
+	color: #b5b5b5;
+	font-size: 18px;
+}
+.checkBox{
+	position: relative;
+}
+.checkBox input{
+	width: 14px;
+	height: 14px;
+	color: #aaaaaa;
+	float: left;
+}
+.checkBox label{
+	float: left;
+	font-size: 12px;
+	margin: 8px 9px;
+	color: #333333;
+}
+.checkBox a{
+	position:absolute;
+	left: 264px;
+	top: 0px;
+	color: #333333;
+	margin: 8px 3px; 
+}
+.checkBox a:hover{
+	color: #de342f;
+}
+.login_g input{
+	background: #de342f;
+	border-radius: 5px;
+	text-indent: 0;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 18px;
+	color: #fff;
+}
+.login_g input:hover{
+	cursor: pointer;
+}
+.partner{
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5px;
+}
+.partner_net{
+	margin: 25px 0 90px 0;	
+	overflow: hidden;
+}
+.partner_net a:first-of-type{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../img/wechat_f.png) no-repeat;
+	float: left;
+}
+.partner_net a:last-of-type{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url(../img/qq_f.png) no-repeat;
+	float: left;
+	margin: 0 20px;
+}
+.partner_net a:first-of-type:hover{
+	background: url(../img/wechat_h.png) no-repeat;
+}
+.partner_net a:last-of-type:hover{
+	background: url(../img/qq_h.png) no-repeat;
+}
