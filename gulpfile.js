@@ -7,41 +7,41 @@ var connect = require("gulp-connect");
 // 定义一个复制文件的任务
 gulp.task("copyfile",function(){
 	gulp.src("*.html")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu"));
 });
 // 复制JS文件
 gulp.task("copyjs",function(){
 	gulp.src("js/*.js")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\js"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\js"));
 });
 // 复制css文件
 gulp.task("copycss",function(){
 	gulp.src("scss/*.css")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\css"));
 });
 // 复制图片文件
 gulp.task("images",function(){
 	gulp.src("img/*.*")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\img"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\img"));
 });
 //复制php文件
 gulp.task("copyphp",function(){
 	gulp.src("php/*.php")
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\php"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\php"));
 });
 
 //sass编译
 gulp.task("sass",function(){
 	gulp.src(["scss/*.scss"])
 	.pipe(sass())
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\css"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\css"));
 });
 
 //合并文件
 gulp.task("concatjs",function(){
 	gulp.src(["js/index.js","js/goodslist.js"])
 	.pipe(concat("index.js"))
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\js"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\js"));
 });
 
 
@@ -50,7 +50,7 @@ gulp.task("concatanduglifyjs",function(){
 	gulp.src(["js/index.js","js/goodslist.js"])
 	.pipe(concat("index.js"))
 	.pipe(uglify())
-	.pipe(gulp.dest("D:\\phpStudy\\WWW\\yuwang\\js"));
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\xiangmu\\js"));
 });
 // 启动监听器
 gulp.task("watchall",function(){

@@ -138,10 +138,10 @@ body{
 	top: 18px;
 	display: none;
 }
-.mengban p{
+#mbp{
 	font-size: 14px;
 	color: #fff;
-	margin-top: 88px;
+	// margin-top: 88px;
 	line-height: 22px;
 }
 .mengban img{
@@ -154,10 +154,6 @@ body{
 .hov_imgs:hover .mengban{
 	display:block;
 }
-// .hov_imgs:hover .imgs{
-// 	transform:scale(1.2);
-// 	transform-origin:center center;
-// }
 .sec_box1{
 	width: 303px;
 	height: 319px;
@@ -166,7 +162,6 @@ body{
 	width: 280px;
 	height: 210px;
 	margin-top: 18px;
-	// transition: all 1s;
 }
 .sec_txt{
 	font-size: 14px;

@@ -233,33 +233,32 @@ body{
 	width: 42px;
 	height: 272px;
 	margin-top: -125px;
-	background: #fff;
 	z-index: 999;
 }
 .beside_t{
 	width: 39px;
 	height: 39px;
-	border: 1px solid #dddddd;
-	background: url(../img/icon-right.png) no-repeat 5px 6px;
+	background: #fff url(../img/icon-right.png) no-repeat 5px 6px;
 	margin-bottom: 3px;
 }
 .beside_2{
-	background: url(../img/icon-right.png) no-repeat 6px -37px;
+	background: #fff url(../img/icon-right.png) no-repeat 6px -37px;
 }
 .beside_3{
-	background: url(../img/icon-right.png) no-repeat 6px -78px;
+	background: #fff url(../img/icon-right.png) no-repeat 6px -78px;
 }
 .beside_4{
-	background: url(../img/icon-right.png) no-repeat 6px -120px;
+	background: #fff url(../img/icon-right.png) no-repeat 6px -120px;
 }
 .beside_5{
-	background: url(../img/icon-right.png) no-repeat 6px -162px;
+	background: #fff url(../img/icon-right.png) no-repeat 6px -162px;
 }
 .beside_6{
-	background: url(../img/icon-right.png) no-repeat 6px -204px;
+	background: #fff url(../img/icon-right.png) no-repeat 6px -204px;
 }
 .beside_t:hover{
 	background: #de3429 url(../img/icon-right-w.png) no-repeat 5px 6px;
+	cursor: pointer;
 }
 .beside_2:hover{
 	background: #de3429 url(../img/icon-right-w.png) no-repeat 6px -37px;
